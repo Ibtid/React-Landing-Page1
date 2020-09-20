@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -8,7 +9,12 @@ const Header = () => {
       <div>
         <button type="button">Get Started</button>
       </div>
-      <img src="../images/online-shop.png" />
+      <div className="image">
+        <img
+          src="https://raw.githubusercontent.com/AldoHub/React-Landing-Page/master/public/assets/online-shop.png"
+          alt="loading"
+        />
+      </div>
     </header>
   );
 };
