@@ -56,6 +56,27 @@ body {
   color: skyblue;
 }
 
+.login {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 50px;
+  padding: 5px 15px;
+  border: 0;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #2386c8;
+}
+
+.login:focus {
+  outline: none;
+}
+
 section {
   display: flex;
   flex-direction: column;

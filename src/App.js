@@ -17,6 +17,9 @@ function App() {
       <section id="home">
         <h1>Welcome To My Site</h1>
         <p>Get Started</p>
+        <button className="login" type="button">
+          Login
+        </button>
       </section>
       <section id="about">
         <h1>About</h1>
