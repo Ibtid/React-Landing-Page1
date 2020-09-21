@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS smooth scroll*/
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar li a:hover {
+  color: skyblue;
+}
+
+.login {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 50px;
+  padding: 5px 15px;
+  border: 0;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #2386c8;
+}
+
+.login:focus {
+  outline: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section#home {
+  background: url("https://source.unsplash.com/bZZp1PmHI0E/1600x900") no-repeat
+    center center/cover;
+}
+
+section#about {
+  background: url("https://c4.wallpaperflare.com/wallpaper/620/81/253/pattern-design-dark-texture-wallpaper-preview.jpg")
+    no-repeat center center/cover;
+}
+
+section#service {
+  background: url("https://source.unsplash.com/K2tdx2mFDHc/1600x900") no-repeat
+    center center/cover;
+}
+
+section#contact {
+  background: url("https://motionarray.imgix.net/preview-38109uOYYN911kJ_0009.jpg")
+    no-repeat center center/cover;
+}
