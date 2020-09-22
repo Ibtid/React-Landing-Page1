@@ -16,7 +16,7 @@ const LoginForm = () => {
 
   return (
     <div className="FormScreen">
-      <div className="login">
+      <div className="loginForm">
         <div className="container">
           {isLogginActive && <Login />}
           {!isLogginActive && <Register />}

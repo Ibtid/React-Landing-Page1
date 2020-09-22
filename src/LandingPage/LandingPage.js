@@ -17,7 +17,7 @@ const LandingPage = () => {
       <section id="home">
         <h1>Welcome To My Site</h1>
         <p>Get Started</p>
-        <button className="login" type="button">
+        <button className="LandingPageLogin" type="button">
           Login
         </button>
       </section>
