@@ -28,7 +28,7 @@ const Register = () => {
             <input
               className={`${errors.username && "inputError"}`}
               text="text"
-              name="usernme"
+              name="username"
               placeholder="Username"
               values={values.username}
               onChange={handleChange}
