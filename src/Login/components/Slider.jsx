@@ -6,7 +6,7 @@ const Slider = (props) => {
     <div className={props.currentActive} onClick={props.onClick}>
       <div className="inner-container">
         <div className="text">
-          <div className="message">{props.current}</div>
+          <div className="message">{props.currentMessage}</div>
           <div>{props.current}</div>
         </div>
       </div>

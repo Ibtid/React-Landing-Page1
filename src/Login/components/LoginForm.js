@@ -15,7 +15,7 @@ const LoginForm = () => {
   var currentActive = isLogginActive ? "right-side left" : "right-side right";
 
   return (
-    <div className="App">
+    <div className="FormScreen">
       <div className="login">
         <div className="container">
           {isLogginActive && <Login />}
