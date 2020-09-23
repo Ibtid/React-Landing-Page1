@@ -1,124 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-
-/* {
-  margin: 0;
-  padding: 0;
-}*/
-
-/*body {
-  font-family: "PT Sans", sans-serif;
-  background: #333;
-  color: #fff;
-  line-height: 1.6;
-  height: 100vh;
+.LandingMain {
+  margin: 0px;
+  background-color: #1e242a;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   overflow: hidden;
-}*/
+}
 
-.container {
-  font-family: "PT Sans", sans-serif;
-  background: #333;
-  color: #fff;
-  line-height: 1.6;
-  height: 100vh;
-  overflow: hidden;
+.Landingbox1 {
+  width: 530px;
+  height: 625px;
+  background-image: url("./DC2.png");
+  position: absolute;
+  bottom: -100%;
+  left: 30%;
+  animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+.Landingbox1::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-image: url("./DC2.png");
+  left: 0px;
+  z-index: -1;
+}
+@keyframes anim {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+@keyframes anim2 {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 50%;
+  }
+}
+.Landingbox2 {
   width: 100%;
   height: 100%;
-  /* CSS smooth scroll*/
-  /*overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;*/
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 120px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  overflow: hidden;
+}
+.Landingtext {
+  position: relative;
+  left: -100%;
+  animation: anim3 2s forwards 3s;
+}
+@keyframes anim3 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.7);
+.LandingButton {
+  position: absolute;
+  top: 200px;
+  left: -100%;
+  animation: anim4 4s forwards 3s;
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-}
-
-.navbar ul li {
-  margin: 0 1rem;
-  padding: 1rem;
-}
-
-.navbar ul li a {
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #f4f4f4;
-}
-
-.navbar li a:hover {
-  color: skyblue;
-}
-
-.LandingPageLogin {
+.LandingGetStartedButton {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  margin-top: 50px;
-  padding: 5px 15px;
-  border: 0;
-  background-color: white;
-  color: black;
-  border-radius: 3px;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
-}
-
-.login:hover {
-  background-color: #2386c8;
+  background-color: #1e242a;
   color: white;
+  border-color: white;
+  border-width: 5px;
+  cursor: pointer;
+  border-style: solid;
+  transition: all 250ms ease-in-out;
 }
 
-.login:focus {
+.LandingGetStartedButton:focus {
   outline: none;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  scroll-snap-align: center;
+.LandingGetStartedButton:hover {
+  background-color: white;
+  color: #1e242a;
 }
 
-section h1 {
-  font-size: 4rem;
-}
-
-section p {
-  font-size: 1.5rem;
-}
-
-section#home {
-  background: url("https://source.unsplash.com/bZZp1PmHI0E/1600x900") no-repeat
-    center center/cover;
-}
-
-section#about {
-  background: url("https://c4.wallpaperflare.com/wallpaper/620/81/253/pattern-design-dark-texture-wallpaper-preview.jpg")
-    no-repeat center center/cover;
-}
-
-section#service {
-  background: url("https://source.unsplash.com/K2tdx2mFDHc/1600x900") no-repeat
-    center center/cover;
-}
-
-section#contact {
-  background: url("https://motionarray.imgix.net/preview-38109uOYYN911kJ_0009.jpg")
-    no-repeat center center/cover;
+@keyframes anim4 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
 }
